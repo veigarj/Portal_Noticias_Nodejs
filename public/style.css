@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    padding:8px 0;
+    background-color: #0aacdc;
+}
+
+.center{
+    max-width: 1280px;
+    margin:0 auto;
+    padding:0 2%;
+    display: flex;
+}
+
+.logo{
+    width:50%;
+}
+
+.logo h2{
+    color:white;
+
+}
+
+.form-busca{
+    width:50%;
+    text-align: right;
+
+}
+
+.form-busca form{
+    display: inline-block;
+    max-width: 200px;
+    position: relative;
+}
+
+/* icone de lupa */
+.form-busca i{
+    position: absolute;
+    left: 10px;
+    top:7px;
+    color:white;
+    font-size: 20px;
+}
+
+/* area de busca */
+.form-busca input{
+    height:40px;
+    width:100%;
+    border:0;
+    font-size: 20px;
+    color:white;
+    background-color: #008bb4;
+    padding-left: 40px;
+    border-radius:10px;
+}
+
+/* cor do placeholder em branco */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+
+  section.noticia-destaque{
+      padding:40px 0;
+  }
+
+  /* Define o tamanho da area da imagem */
+  section.noticia-destaque > .center{
+      max-width: 960px;
+  }
+
+  .img-destaque{
+      width:100%;
+      /* para posicionar texto dentro da imagem usa position: relative */
+      position: relative;
+  }
+  .img-destaque img{
+      width:100%;
+      border-radius:20px;
+      
+  }
+/* coloca a imagem atras com position: absolute e z-index: 2 */
+/* Titulo */
+  .title-destaque-descricao{
+      position: absolute;
+      bottom:0;
+      left:0;
+      padding:10px;
+      max-width: 600px;
+      color:white;
+      z-index: 2;
+  }
+/* coloca a imagem na frente com position: absolute e z-index: 1 */
+/* sombra na imagem */
+  .overlay-destaque{
+      position: absolute;
+      left:0;
+      top:0;
+      border-radius:20px;
+      width:100%;
+      height:100%;
+      background-color:rgba(0,0,0,0.4);
+      z-index: 1;
+  }
+
+  section.outras-noticias {
+    background-color: #eaeaea;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  section.outras-noticias h2 {
+    font-size: 54px;
+    padding-bottom: 30px;
+  }
+
+  .ultimas{
+    width: 60%;
+    padding: 0 30px;
+    display: flex;
+  }
+
+  .box-ultima-single img{
+    width: 350px;
+  }
+
+  .mais-lidas{
+    width: 40%;
+  }
+
+  .mais-lidas > h3{
+    background-color: #3f51b5;
+    color:white;
+    text-align: center;
+    padding:10px 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+
+
+.box-ultima-single{
+    text-align:left;
+    width: 60%;
+    margin-right: 2%;
+    background-color: white;
+    height: 100%;
+    border-radius:10px;
+}
+
+.box-ultima-single img{
+    width: 100%;
+    /* border-radius so na parte de cima */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box-ultima-single h3{
+    font-size: 16px;
+    color: #33439b;
+    margin:20px 0;
+}
+
+.conteudo-noticia-single{
+    padding:20px;
+}
+
+.box-ultima-single h2{
+    color: #303336;
+    font-size: 25px !important;
+}
+
+.box-ultima-single p{
+    color: #303336;
+    font-size: 16px;
+    margin:20px 0;
+}
